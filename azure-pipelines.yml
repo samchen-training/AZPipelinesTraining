@@ -83,7 +83,7 @@ stages:
         ConnectionType: 'AzureRM'
         azureSubscription: 'labAzureSubscription'
         appType: 'webApp'
-        WebAppName: 
+        WebAppName: '$(WEBAPPNAME)'
         packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
         
     - task: AzureAppServiceSettings@1
